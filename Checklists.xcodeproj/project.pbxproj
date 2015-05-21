@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE3A83EC1B0D99C2002287D4 /* IconPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3A83EB1B0D99C2002287D4 /* IconPickerViewController.swift */; };
 		EE7A879E1B0C44F300FA9CC3 /* AllListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7A879D1B0C44F300FA9CC3 /* AllListTableViewController.swift */; };
 		EE7A87A01B0C4A3200FA9CC3 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7A879F1B0C4A3200FA9CC3 /* Checklist.swift */; };
 		EE7A87A21B0C503600FA9CC3 /* ListDetailViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7A87A11B0C503600FA9CC3 /* ListDetailViewControllerTableViewController.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE3A83EB1B0D99C2002287D4 /* IconPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconPickerViewController.swift; sourceTree = "<group>"; };
 		EE7A879D1B0C44F300FA9CC3 /* AllListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllListTableViewController.swift; sourceTree = "<group>"; };
 		EE7A879F1B0C4A3200FA9CC3 /* Checklist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
 		EE7A87A11B0C503600FA9CC3 /* ListDetailViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailViewControllerTableViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				EE7A879F1B0C4A3200FA9CC3 /* Checklist.swift */,
 				EE7A87A11B0C503600FA9CC3 /* ListDetailViewControllerTableViewController.swift */,
 				EE7A87A31B0D63DA00FA9CC3 /* DataModel.swift */,
+				EE3A83EB1B0D99C2002287D4 /* IconPickerViewController.swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				EE87C6FA1B04625C00B985F3 /* CheckListViewController.swift in Sources */,
 				EE7A879E1B0C44F300FA9CC3 /* AllListTableViewController.swift in Sources */,
 				EE7A87A01B0C4A3200FA9CC3 /* Checklist.swift in Sources */,
+				EE3A83EC1B0D99C2002287D4 /* IconPickerViewController.swift in Sources */,
 				EE7A87A21B0C503600FA9CC3 /* ListDetailViewControllerTableViewController.swift in Sources */,
 				EE87C71A1B095AA400B985F3 /* ItemDetailViewController.swift in Sources */,
 				EE7A87A41B0D63DA00FA9CC3 /* DataModel.swift in Sources */,

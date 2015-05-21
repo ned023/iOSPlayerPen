@@ -18,9 +18,13 @@ protocol ListDetailViewControllerDelegate: class {
 class ListDetailViewController: UITableViewController, UITextFieldDelegate {
         @IBOutlet weak var textField: UITextField!
         @IBOutlet weak var doneBarButton: UIBarButtonItem!
+        @IBOutlet weak var iconImageView: UIImageView!
+    
         weak var delegate: ListDetailViewControllerDelegate?
         var checklistToEdit: Checklist?
-        
+        var iconName = "Folder"
+    
+    
         override func viewDidLoad() {
             super.viewDidLoad()
             tableView.rowHeight = 44
@@ -53,7 +57,11 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate {
 
         //Ensure the user cannot select the table cell with the text field embedded
         override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+            if indexPath.section == 1 {
+                return indexPath
+            } else {
                 return nil
+            }
         }
         
         //Text field delegate method to determine if the text field has changed.
