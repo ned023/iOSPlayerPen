@@ -9,9 +9,11 @@
 import UIKit
 
 class Checklist: NSObject, NSCoding {
+
     var name = ""
     var iconName: String
     var items = [ChecklistItem]()
+
     
     init(name: String) {
         self.name = name
@@ -19,10 +21,17 @@ class Checklist: NSObject, NSCoding {
         super.init()
     }
     
+    init(name: String, iconName: String) {
+        self.name = name
+        self.iconName = iconName
+        super.init()
+    }
+    
     required init(coder aDecoder: NSCoder) {
         name = aDecoder.decodeObjectForKey("Name") as! String
         items = aDecoder.decodeObjectForKey("Items") as! [ChecklistItem]
         iconName = aDecoder.decodeObjectForKey("IconName") as! String
+
         
         super.init()
     }
@@ -30,7 +39,9 @@ class Checklist: NSObject, NSCoding {
         aCoder.encodeObject(name, forKey: "Name")
         aCoder.encodeObject(items, forKey: "Items")
         aCoder.encodeObject(iconName, forKey: "IconName")
+
     }
+   
    
     func countUncheckedItems() -> Int {
         var count = 0

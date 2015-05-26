@@ -14,13 +14,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let dataModel = DataModel()
 
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.        
         let navigationController = window!.rootViewController as! UINavigationController
         let controller = navigationController.viewControllers[0] as! AllListTableViewController
         controller.dataModel = dataModel
         
+        
+      //  let notifcationSettings = UIUserNotificationSettings(forTypes: .Alert | .Sound, categories: nil)
+     //   UIApplication.sharedApplication().registerUserNotificationSettings(notifcationSettings)
+        
+ /*       let date = NSDate(timeIntervalSinceNow: 10)
+        let localNotification = UILocalNotification()
+        localNotification.fireDate = date
+        localNotification.timeZone = NSTimeZone.defaultTimeZone()
+        localNotification.alertBody = "I am a local notification!"
+        localNotification.soundName = UILocalNotificationDefaultSoundName
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification) */
+        
+        
         return true
+    }
+    
+    
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+            println("didReceiveLocalNotification: \(notification)")
     }
 
     func applicationWillResignActive(application: UIApplication) {
